@@ -1,0 +1,11 @@
+Left Code VertSlash Token Macro
+
+S -> Rule Rules
+Rules -> Rule Rules | eps
+Rule -> Left Right | Macro TokenList
+Right -> ProductionList Production
+ProductionList -> ProductionList Production VertSlash | eps
+Production -> TokenList C
+C -> Code | eps
+TokenList -> TokenList Token | Token
+
